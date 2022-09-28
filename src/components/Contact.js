@@ -16,7 +16,7 @@ import {
   
 // Kalian bisa membuat CSS sendiri di src/components/Contact.css
 // atau langsung tambahkan dengan sx={{}}
-const Contact = (props) => {
+const Contact = (data) => {
     // Contact berisi foto, nama, telepon, dan email
     return (
     <>
@@ -33,7 +33,7 @@ const Contact = (props) => {
       </TableHead>
       <TableBody>
         {/* Asumsi nama props adalah todos */}
-        {props.contacts.map((todo) => (
+        {data.contacts.map((todo) => (
           <TableRow key={todo.id}>
             <TableCell>{todo.name}</TableCell>
             <TableCell>{todo.phone}</TableCell>
