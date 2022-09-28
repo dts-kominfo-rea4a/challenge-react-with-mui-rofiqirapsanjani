@@ -20,7 +20,7 @@ const App = () => {
       <Header />
 
       <ContactForm />
-      <Contact contacts = {contacts} />
+      <Contact data = {contacts} />
 
 
     </div>
